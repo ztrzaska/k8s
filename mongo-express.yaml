@@ -34,7 +34,7 @@ spec:
           valueFrom:
             configMapKeyRef:
               name: database-config
-              key: database-url
+              key: database-host
 ---
 apiVersion: v1
 kind: Service

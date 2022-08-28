@@ -24,17 +24,17 @@ spec:
           valueFrom:
             secretKeyRef:
               name: db-secret
-              key: mongo-user
+              key: mongo-db-user
         - name: USER_PWD
           valueFrom:
             secretKeyRef:
               name: db-secret
-              key: mongo-password
+              key: mongo-db-password
         - name: DB_URL
           valueFrom:
             configMapKeyRef:
               name: database-config
-              key: database-url
+              key: database-host
 ---
 apiVersion: v1
 kind: Service
