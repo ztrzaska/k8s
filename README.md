@@ -64,6 +64,7 @@ http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kube
 
 ## Documentation of the libraries used
 * [Kubernetes documentation](https://kubernetes.io/)
+* [Kubernetes dashboard](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
 * [Kubernetes example config files](https://kubernetes.io/docs/concepts/workloads/controllers/)
 * [Spring boot](https://docs.spring.io/spring-boot/docs/current/reference/html/)
 
