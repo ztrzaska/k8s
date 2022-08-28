@@ -4,9 +4,11 @@
 
 The following application illustrate simple kubernetes cluster. It contains few modules, which is spring boot web application, mongo database server, mongo express client, k8s secret with database configuration, config map and ingress component.
 
-### Starting the project
+The configuration and statistics can be done with using kubernetes dashboard. Project describe how to access dashboard UI.
 
-Starting minikube:
+### Installation
+
+
 ```
 minikube start
 ```
@@ -40,6 +42,24 @@ kubectl get pod
 kubectl logs <pod_name>
 kubectl describe pod <pod_name>
 ```
+### Kubernetes dashboard
+
+#### Create account for kubernetes dashboard 
+```
+cd dashboard
+kubectl apply -f admin-user.yaml
+kubectl apply -f cluster-role.yaml
+```
+
+#### Create Bearer Token
+```
+kubectl -n kubernetes-dashboard create token admin-user
+```
+
+#### Accessing kubernetes dashboard
+
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/
+
 
 
 ## Documentation of the libraries used
