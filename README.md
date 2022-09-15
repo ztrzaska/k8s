@@ -1,6 +1,6 @@
 # Kubernetes with web application and mongo database
 
-### Guides
+### Get started
 
 The following application illustrate simple kubernetes cluster. It contains few modules, which is spring boot web application, mongo database server, mongo express client, k8s secret with database configuration, config map and ingress component.
 
