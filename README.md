@@ -1,4 +1,4 @@
-# Kubernetes web application with mongo database
+# Kubernetes with spring web application and mongo database
 
 ### Guides
 
